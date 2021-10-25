@@ -1,12 +1,12 @@
-let hamburgerMenu = document.querySelector(".hamburger-menu")
-const openHamburger = document.querySelector(".fas")
-const closeHamburger = document.querySelector(".hamburger-menu .close")
+let openHamburger = document.querySelector(".header-right > a")
+const hamburger = document.querySelector(".hamburger-menu")
+const closeHamburger = document.querySelector(".close")
 
 
 openHamburger.addEventListener("click",
 
     function(){
-        hamburgerMenu.className = "hamburger-menu active"
+        hamburger.classList.add = "active"
     }
 
 )
@@ -15,6 +15,6 @@ openHamburger.addEventListener("click",
 closeHamburger.addEventListener("click",
 
 function(){
-    hamburgerMenu.className = "hamburger-menu"
+    hamburger.classList.remove = "active"
 }
 )
